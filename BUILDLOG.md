@@ -3,15 +3,19 @@
 ### 2026-11-10
 - Published this repo: my first public project. Rebuilt the workbook pattern with synthetic data so I could share the method without sharing my finances.
 - Learned: the privacy scrub took real work. File names, tab names and notes all carried account identifiers. "Is it safe to publish?" is a T&S question I know well, just applied to my own data this time.
+- AI Learning: give the AI the chance to come up with ideas, but bring your own. The ops and policy parallels in this README were mine. Use AI as an enhancer, not a crutch.
 - Next: track actual vs. target month by month, and turn the cleaning steps into reusable scripts.
 
 ### 2026-09-30
 - Cleaned the credit card file (806 rows → 558) and the Amazon export (191 items), then combined all three sources into one workbook.
-- Learned: editing in Excel and having Claude diff my re-upload saved hours. It found my 62 changes without me listing them. Also, Claude asking me four method questions before building was the most useful thing it did all project.
+- Learned: editing in Excel and having Claude diff my re-upload saved hours. It found my 62 changes without me listing them.
+- AI Learning: Claude asking me four method questions before building was the most useful thing it did all project (same time period for every source, merging near-duplicate categories, how to average, tracking the annual fee separately).
 - Surprised me: an Amazon date-format quirk silently dropped rows until we caught it. Silent failures are the dangerous ones.
-- Next: add budget targets and an "Once a Year" column for annual costs.
+- Next: add budget targets and a "Once a Year" column for annual costs.
 
 ### 2026-09-21
-- First session: the checking account export. Started by asking Claude to explain the file before changing anything.
+- First session: the checking account export. It seemed like the easiest one, with fewer transactions and easier labels, but it still took several rounds of elimination. Started by asking Claude to explain the file before changing anything.
 - Learned: of about 430 rows, only 40 were real expenses. Most of a bank export is money moving, not money spent. Deciding what counts was my call, not the AI's.
+- AI Learning: don't assume what the AI can't do. Ask it what it can do with your data first, and let it show you its limits.
+- Surprised me: this account really was the easiest for me, but not less work for the AI. I knew these labels well and there were only a few outliers that needed a deep dive. Familiarity with the data speeds up the human part, not the machine part.
 - Next: apply the same pattern to the credit card and Amazon data.
