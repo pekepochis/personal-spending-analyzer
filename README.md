@@ -6,9 +6,9 @@ A spreadsheet method and template for turning messy bank, card and Amazon export
 
 ## The problem
 
-My spending was spread across three places: a checking account, a credit card and Amazon orders. Each one exports in its own format, uses its own category labels, and is full of rows that aren't really spending: payroll, transfers between my own accounts, card payments, refunds, cancelled orders.
+My spending was spread across three places: a checking account, a credit card (yay points!) and Amazon orders. Each one exports in its own format, uses its own category labels, and is full of rows that aren't really spending: payroll, transfers between my own accounts, card payments, refunds, cancelled orders.
 
-That isn't really a math problem. It's a **classification problem**, the same kind I've worked on for 20+ years in Trust & Safety and ad policy. You need a clear rule for what counts, a consistent taxonomy, edge-case handling, and an audit trail so you can explain every call afterwards. I wanted to see whether I could bring that discipline to my own money, using AI to do the technical work I can't do myself.
+This is a classification problem, and a familiar one. Ops and policy teams deal with it all the time when outside taxonomies don't match their own, like IAB (Interactive Advertising Bureau) content categories vs. a platform's policy labels. The fix is the same in both places: map every outside label onto one consistent taxonomy, decide clearly what's in and out of scope. Handle edge cases manually, and keep an audit trail. Get the map wrong and the decisions downstream go wrong too. In ad policy, that means enforcement, brand safety and user safety. In a budget, a mislabeled transfer makes it look like you spent money you didn't.
 
 ## What it does
 
