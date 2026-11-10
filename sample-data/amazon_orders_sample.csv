@@ -1,0 +1,19 @@
+Order Date,Order ID,Website,Product Name,Order Status,Total Amount
+2026-01-01 18:46:00,SAMPLE-1001,Amazon.com,"Sample Brand Paper Towels, 6 Rolls",Closed,$18.80
+2026-01-18 20:17:00,SAMPLE-1002,Amazon.com,"Generic USB-C Cable, 3 ft",Closed,$10.84
+2026-01-11 09:18:00,SAMPLE-1003,Amazon.com,Example Paperback Novel,Closed,$13.48
+2026-01-15 08:46:00,SAMPLE-1004,grocery-partner,"Organic Bananas, 1 bunch",Closed,$3.75
+2026-01-09 16:48:00,SAMPLE-1005,Amazon.com,Plain Cotton T-Shirt,Closed,$13.79
+2026-02-04T21:40:00Z,SAMPLE-1006,Amazon.com,"Sample Brand Paper Towels, 6 Rolls",Closed,$20.09
+2026-02-21T16:38:00Z,SAMPLE-1007,Amazon.com,"Generic USB-C Cable, 3 ft",Closed,$7.99
+2026-02-12T20:10:00Z,SAMPLE-1008,Amazon.com,Example Paperback Novel,Closed,$14.32
+2026-02-25T22:33:00Z,SAMPLE-1009,grocery-partner,"Organic Bananas, 1 bunch",Closed,$3.84
+2026-02-20T13:31:00Z,SAMPLE-1010,Amazon.com,Plain Cotton T-Shirt,Closed,$12.19
+2026-03-12T22:53:00Z,SAMPLE-1011,Amazon.com,"Sample Brand Paper Towels, 6 Rolls",Closed,$23.65
+2026-03-08T08:15:00Z,SAMPLE-1012,Amazon.com,"Generic USB-C Cable, 3 ft",Closed,$11.39
+2026-03-03T09:46:00Z,SAMPLE-1013,Amazon.com,Example Paperback Novel,Closed,$13.89
+2026-03-03T20:34:00Z,SAMPLE-1014,grocery-partner,"Organic Bananas, 1 bunch",Closed,$3.53
+2026-03-05T18:30:00Z,SAMPLE-1015,Amazon.com,Plain Cotton T-Shirt,Closed,$21.47
+2026-02-14T10:00:00Z,SAMPLE-2001,Amazon.com,Example Ebook (digital),Closed,$4.99
+2026-03-02T10:00:00Z,SAMPLE-2002,Amazon.com,Sample Desk Lamp,Cancelled,$29.99
+2026-03-05T10:00:00Z,SAMPLE-2003,Amazon.com,Sample Throw Pillow,Closed,$24.00
