@@ -13,10 +13,10 @@ This is a classification problem, and a familiar one. Ops and policy teams deal 
 ## What it does
 
 - **Separates real spending from noise.** It excludes income, internal transfers, card payments, P2P transfers, cash withdrawals and bank fees, and keeps every excluded row on an audit tab with the reason.
-- **Prevents double counting.** Amazon charges are removed from the card file because the Amazon export itemizes them, and a card payment from checking isn't counted on top of the card's own charges.
-- **Normalizes messy categories** through a single Category Map. Rename or merge a category once and every summary updates.
+- **Prevents double counting.** Amazon charges are removed from the card file because the Amazon export itemizes them, and a card payment from checking isn't counted on top of the card's own charges. *The ops version: "I think I saw that same advertiser two tabs ago."*
+- **Normalizes messy categories** through a single Category Map. Rename or merge a category once and every summary updates. *The ops version: retiring unused or misused labels, and taming the infamous "Other".*
 - **Separates steady costs from one-offs** with a Category × Month grid, so budget targets come from real patterns.
-- **Compares actual against target**, including an "Once a Year" column so annual fees don't distort the monthly picture.
+- **Compares actual against target**, including a "Once a Year" column so annual fees don't distort the monthly picture.
 
 ## How I built it
 
@@ -38,9 +38,9 @@ This is a classification problem, and a familiar one. Ops and policy teams deal 
 | Checked that combined totals matched every source file | Set budget targets and added the "Once a Year" column |
 
 **What I learned**
-- **Explain first, build second.** Asking the AI to describe the data before touching it surfaced patterns I'd never have spotted.
-- **Make the AI ask before it assumes.** The best session was the one where Claude raised four method questions instead of guessing.
-- **Numbered instructions plus confirmed counts** ("removed X rows, Y remain") is how you supervise AI work you can't check line by line.
+- **Explain first, build second.** Asking the AI to describe the data before touching it showed me what it could do, and surfaced patterns I didn't expect it to find.
+- **Make the AI ask before it assumes.** The best session was the one where Claude raised four method questions instead of guessing. The [WDAI (Women Defining AI)](https://www.womendefiningai.org) lessons paid off :)
+- **Numbered instructions plus confirmed counts** ("removed X rows, Y remain") is how I supervised AI work that would have taken me days to check line by line.
 - **Edit in Excel, then let the AI find the differences.** I didn't have to describe my 62 manual changes. It diffed the files.
 - **Always keep an untouched raw copy.** It's the audit trail, the same principle as in policy enforcement.
 
