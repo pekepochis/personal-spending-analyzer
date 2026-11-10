@@ -63,4 +63,4 @@ The full method, plus technical gotchas for anyone repeating this, is in [METHOD
 ## About me
 
 Trust & Safety and ad policy leader learning to build with AI.
-[LinkedIn](https://www.linkedin.com/in/YOUR-LINKEDIN-HANDLE)
+[LinkedIn](https://www.linkedin.com/in/analuisadomh/)
