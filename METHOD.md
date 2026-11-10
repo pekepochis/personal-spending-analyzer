@@ -57,7 +57,7 @@ Use *Category by Month* to see which categories are steady and which are one-off
 ## Technical gotchas (for anyone repeating this with AI)
 
 - **Formulas need a recalculation step.** Files written by Python (openpyxl) contain formulas but no computed values until a spreadsheet program recalculates them. We used a LibreOffice-based recalc script, then read the values back to check them.
-- **Amazon's data export** is a zip file. Physical orders are in `Your Amazon Orders/Order History.csv`. Returns are in separate files, and refund amounts only appear there. Grocery orders sit in the same file, marked by a different `Website` value.
+- **Amazon's data export** is a zip file sent by Amazon (takes a day or 2). Physical orders are in `Your Amazon Orders/Order History.csv`. Returns are in separate files, and refund amounts only appear there. Grocery orders sit in the same file, marked by a different `Website` value.
 - **Mixed date formats.** Newer Amazon rows use ISO 8601 dates (`2026-02-14T10:00:00Z`). Parse with `pd.to_datetime(..., format='ISO8601', utc=True)`. Using `errors='coerce'` **silently drops** those rows.
 - **Amounts arrive as text** (`"$12.99"`). Strip non-numeric characters before converting.
 - **Deleting rows means updating every formula range** and the filter range, then recalculating. The template uses a fixed ceiling (row 1000) to leave room.
